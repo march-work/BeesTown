@@ -552,10 +552,21 @@ BeesTown 的核心理念是 **"每个项目 = 一家独立公司"**：
 
 ## 附录：架构文档索引
 
-- [存储架构](./STORAGE_ARCHITECTURE.md) - 数据持久化设计
-- [Agent架构](./AGENT_ARCHITECTURE.md) - Agent 运行时设计
-- [LLM架构](./LLM_ARCHITECTURE.md) - LLM 集成设计
-- [文件操作架构](./FILE_OPERATIONS_ARCHITECTURE.md) - 文件系统操作
-- [CLI架构](./CLI_ARCHITECTURE.md) - 命令行界面设计
+### 核心架构
+- [存储架构](./STORAGE_ARCHITECTURE.md) - 数据持久化设计（向量DB + SQLite）
+- [记忆系统架构](./MEMORY_SYSTEM_ARCHITECTURE.md) - **新增** - 四层记忆模型、访问控制、生命周期
+- [Agent架构](./AGENT_ARCHITECTURE.md) - Agent 运行时设计（ReACT模式、通信）
+- [LLM架构](./LLM_ARCHITECTURE.md) - LLM 集成设计（OpenAI兼容、多提供商）
+
+### 功能架构
+- [CLI架构](./CLI_ARCHITECTURE.md) - 命令行界面设计（Ink+React）
 - [任务系统架构](./TASK_SYSTEM_ARCHITECTURE.md) - 任务流转与调度
-- [特殊Agent架构](./SPECIAL_AGENTS_ARCHITECTURE.md) - HR/架构师/测试员
+- [Tools架构](./TOOLS_ARCHITECTURE.md) - **核心** - 工具系统（Read/Edit/Bash/Grep等内置工具 + MCP工具）
+- [文件操作架构](./FILE_OPERATIONS_ARCHITECTURE.md) - 文件系统操作详细设计
+
+### 集成架构
+- [MCP集成架构](./MCP_INTEGRATION_ARCHITECTURE.md) - MCP连接、权限控制、审计
+- [Skills架构](./SKILLS_ARCHITECTURE.md) - 技能系统、权限控制、继承组合
+
+### 特殊组件
+- [特殊Agent架构](./SPECIAL_AGENTS_ARCHITECTURE.md) - HR/架构师/测试员详细设计
